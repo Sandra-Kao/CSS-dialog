@@ -1,0 +1,17 @@
+.dialog {
+    padding: 30px;
+    background-color: pink;
+    width:20%;
+    position: relative;
+    border-radius: 10px;
+}
+
+     .dialog::after {
+        content: '';
+        border-right: 20px solid transparent;
+        border-left: 20px solid transparent;
+        border-top: 20px solid pink;
+        position: absolute;
+        bottom: -20px;
+        left: calc((100% - 40px) / 2);
+    }
